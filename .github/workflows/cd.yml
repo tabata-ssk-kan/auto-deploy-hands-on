@@ -1,0 +1,14 @@
+name: CD Workflow
+
+on:
+  push:
+    branches:
+      - '*'
+  workflow_dispatch:
+
+jobs:
+  echo:
+    runs-on: self-hosted
+    steps:
+      - name: Echo message to log file
+        run: cd ~ && echo "Hello, self-hosted runner!" >> ./cd.log
