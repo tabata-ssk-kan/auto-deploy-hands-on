@@ -1,11 +1,33 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>サンプルページ</title>
+    <title>QuickTools-Web</title>
+    <link rel="stylesheet" href="/css/style.css" th:href="@{/css/style.css}">
 </head>
 <body>
-    これはサンプルページです。
+    <a href="#main-content" class="skip-link">本文へ移動</a>
+    <div class="wrapper">
+        <header>
+            <div class="header">
+                <a href="/" th:href="@{/}" class="link-reset"><span class="site-title">QuickTools-Web</span></a>
+            </div>
+            <nav class="nav-bar" aria-label="ナビゲーション">
+                <a href="/" th:href="@{/}" class="nav-menu" aria-current="page">トップページ</a>
+            </nav>
+        </header>
+        <main id="main-content" tabindex="-1">
+            <section class="common-container">
+                <h1 class="page-title">トップページ</h1>
+                <p class="page-lead">QuickTools-Webはちょっとした便利ツールをまとめておくWebアプリです。</p>
+                <br>
+                <ul class="list-compact">
+                    <li><a href="/birthdays" th:href="@{/birthdays}">誕生日管理メモ</a></li>
+                </ul>
+            </section>
+        </main>
+        <footer><div><hr><p class="center">2026 11/23 更新</p></div></footer>
+    </div>
 </body>
 </html>

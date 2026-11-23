@@ -1,1 +1,19 @@
-{}
+{
+  // gitの設定
+  "git.blame.statusBarItem.enabled": true,
+
+  // HTML・CSSの設定
+  "[html]": {
+    "editor.quickSuggestions": {
+      "other": true
+    }
+  },
+  "css.styleSheets": ["src/main/resources/static/css/**/*.css"],
+
+  // Javaの設定
+  "[java]": {
+    "editor.defaultFormatter": "josevseb.google-java-format-for-vs-code",
+    "editor.inlayHints.enabled": "onUnlessPressed",
+  },
+  "java.format.settings.google.version": "1.37.0",
+}

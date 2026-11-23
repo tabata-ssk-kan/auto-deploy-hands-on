@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>誕生日管理メモ 一覧</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">本文へ移動</a>
+    <div class="wrapper">
+        <header>
+            <div class="header">
+                <a href="index.html" class="link-reset"><span class="site-title">QuickTools-Web</span></a>
+            </div>
+            <nav class="nav-bar" aria-label="一覧ページナビゲーション">
+                <a href="index.html" class="nav-menu">トップページ</a>
+            </nav>
+        </header>
+        <main id="main-content" tabindex="-1">
+            <section class="common-container">
+                <div class="section-header-row">
+                    <div>
+                        <h1 class="page-title">誕生日管理メモ</h1>
+                        <p class="page-lead">登録済みデータの確認と編集ができます。</p>
+                    </div>
+                    <div class="button-row">
+                        <a href="birthday-detail.html?mode=add" class="btn-primary">新規追加</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="table-scroll-wrapper">
+                    <table aria-label="誕生日一覧">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>名前</th>
+                                <th>生年月日</th>
+                                <th>年齢</th>
+                                <th>誕生日まで</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>田中 花子</td>
+                                <td>1995-01-12</td>
+                                <td>31</td>
+                                <td>50日</td>
+                                <td><a href="birthday-detail.html?id=1" class="btn-action btn-compact">編集</a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>鈴木 一郎</td>
+                                <td>1989-12-02</td>
+                                <td>36</td>
+                                <td>9日</td>
+                                <td><a href="birthday-detail.html?id=2" class="btn-action btn-compact">編集</a></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>山田 美咲</td>
+                                <td>2001-03-27</td>
+                                <td>25</td>
+                                <td>124日</td>
+                                <td><a href="birthday-detail.html?id=3" class="btn-action btn-compact">編集</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="helper-text">※ カウントダウンは本日基準の表示イメージです。</p>
+                <div class="button-row">
+                    <a href="coming-soon.html" class="btn-secondary">CSV取り込み（実装中）</a>
+                </div>
+            </section>
+        </main>
+        <footer><div><hr><p class="center">2026 11/23 更新</p></div></footer>
+    </div>
+</body>
+</html>
